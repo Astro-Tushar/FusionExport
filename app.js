@@ -7,7 +7,8 @@ const { ExportManager, ExportConfig } = require("../fusionexport-node-client");
 
 // Instantiate ExportManager
 const exportManager = new ExportManager({
-    host: "localhost"
+    host: "localhost",
+    port: "1337"
 });
 
 // Instantiate ExportConfig and add the required configurations
