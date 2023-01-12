@@ -25,7 +25,7 @@ exportConfig.set("footerEnabled", "true");
 
 // provide the export config
 exportManager
-  .export(exportConfig, ".", true)
+  .export(exportConfig, ".", false)
   .then(exportedFiles => {
     exportedFiles.forEach(file => console.log(file));
   })
