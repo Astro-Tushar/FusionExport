@@ -14,6 +14,9 @@ const exportManager = new ExportManager({
 // Instantiate ExportConfig and add the required configurations
 const exportConfig = new ExportConfig();
 
+
+exportConfig.set('quality', 'best');
+
 exportConfig.set("chartConfig", path.join(__dirname, "resources", "chart-config-file.json"));
 exportConfig.set("templateFilePath", path.join(__dirname, "resources", "dashboard-template.html"));
 exportConfig.set("type", "pdf");
